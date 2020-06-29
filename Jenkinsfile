@@ -1,11 +1,13 @@
 pipeline {
-    agent any
+    agent {
+    dockerfile {
+        filename 'Dockerfile'
+        dir 'build'
+        label 'zip-job-docker'
+        registryUrl 'https://github.com/dolev017/targil.git'
+          }
+      }
     stages {
-        stage('Build') {
-            steps {
-                sh 'docker run -d --name zip_targil zip:1'
-            }
-        }
         stage('Publish') {
             steps {
                 echo 'Testing..'
