@@ -1,6 +1,4 @@
 pipeline {
-    agent {
-        docker { image "test10:1"} 
     stages {
         stage('Build') {
             steps {
