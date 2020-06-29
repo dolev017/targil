@@ -1,0 +1,3 @@
+FROM test2:1
+RUN apt install openjdk-12-jre -y
+CMD /bin/bash
