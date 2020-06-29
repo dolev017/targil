@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker run --tag zip:1 .'
+                sh 'docker run -d --name zip_targil zip:1'
             }
         }
         stage('Publish') {
