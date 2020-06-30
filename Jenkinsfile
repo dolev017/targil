@@ -24,7 +24,7 @@ pipeline {
         }
 	stage('Send Mail') {
 	  steps {
-		mail bcc: , body: , cc: , from: , replyTo: , subject: 'test', to: 'dolevm017@gmail.com'
+		mail bcc: '' , body: '' , cc: '' , from: '' , replyTo: '' , subject: 'test', to: 'dolevm017@gmail.com'
 	  }
 	}
         stage('Clean') {
@@ -33,4 +33,5 @@ pipeline {
             }
         }
     }
+  }
 }
