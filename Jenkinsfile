@@ -1,9 +1,14 @@
 pipeline {
-    agent any
+    agent {
+      docker {
+         image 'zip:1'
+         label 'zip-job-docker'
+}
+}
     stages {
         stage('build') {
             steps {
-                sh 'docker run -d zip:1'
+                sh 'make'
             }
         }
         stage('E-mail') {
