@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'zip-job-docker' }
     stages {
         stage('Publish') {
             steps {

@@ -1,3 +1,3 @@
-FROM test2:1
-RUN apt install openjdk-12-jre -y
-CMD /bin/bash
+FROM zip:1
+RUN apt-get install openjdk-8-jre -y
+ENTRYPOINT slave.jar
