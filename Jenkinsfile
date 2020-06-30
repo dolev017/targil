@@ -1,13 +1,9 @@
 pipeline {
-    agent {
-      docker {
-         image 'zip:1'
-}
-}
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'make'
+                docker run -d zip:1
             }
         }
         stage('E-mail') {
