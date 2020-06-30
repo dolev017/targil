@@ -2,7 +2,6 @@ pipeline {
     agent {
       docker {
          image 'zip:1'
-         label 'zip-job-docker'
 }
 }
     stages {
