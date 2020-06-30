@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     dockerNode(dockerHost: 'tcp://127.0.0.1:2376', image: 'zip:1', remoteFs: '/home/dolev/workspace') {
     stages {
         stage('build') {
