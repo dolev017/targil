@@ -1,18 +1,9 @@
 pipeline {
-    agent {
-    // Equivalent to "docker build -f Dockerfile.build --build-arg version=1.0.2 ./build/
-    dockerfile {
-        filename 'Dockerfile'
-        dir '/home/dolev/targil'
-        label 'zip-job-docker'
-        additionalBuildArgs  '--build-arg version=1.0.2'
-        args '-v /tmp:/tmp'
-    }
-}
+    agent any
     stages {
-        stage('Publish') {
+        stage('build') {
             steps {
-                echo 'Testing..'
+                sh 'docker run -d zip:1'
             }
         }
         stage('E-mail') {
