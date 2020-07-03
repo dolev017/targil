@@ -1,14 +1,10 @@
 pipeline {
-    agent {
-        docker { image 'zip:1' }
-    }
+    agent { dockerfile true }
     stages {
         stage('Test') {
             steps {
-                sh './zip_job.py'
+                sh 'python --version'
             }
         }
     }
 }
-
-
