@@ -1,15 +1,14 @@
 pipeline {
     agent {
-        docker {
-            image 'zip:1'
-            args '-v /home/dolev/.m2:/root/.m2'
-        }
+        docker { image 'zip:1' }
     }
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
                 sh 'python zip_job.py'
             }
         }
     }
 }
+
+
