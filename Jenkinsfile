@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'python zip_job.py'
+                sh './zip_job.py'
             }
         }
     }
