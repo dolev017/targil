@@ -1,3 +1,0 @@
-FROM zip:1
-RUN apt-get install openjdk-8-jre -y
-ENTRYPOINT slave.jar
