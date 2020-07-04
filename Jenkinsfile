@@ -7,10 +7,8 @@ pipeline {
     }    
     stages {
         stage('Build') {
-            steps {
-                dir("tmp") {
-                    sh "python3 zip_job.py"
-                }
+            steps { 
+                sh "python3 /tmp/zip_job.py"
             }
         }
     }
