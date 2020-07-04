@@ -16,7 +16,7 @@ pipeline {
             steps { 
                   
                sh 'curl -fL https://getcli.jfrog.io | sh'
-               sh 'curl -u super-user:Qw12865! -T *.zip "http://localhost:8081/artifactory/binary-storage/'
+               sh 'curl -u super-user:Qw12865! -T a_1.2.0.zip "http://localhost:8081/artifactory/binary-storage/a_1.2.0.zip'
             }
         }
     }
