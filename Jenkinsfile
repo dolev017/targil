@@ -6,9 +6,9 @@ pipeline {
         }
     }    
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'ls -l'
+                sh 'ls -l /tmp'
             }
         }
     }
