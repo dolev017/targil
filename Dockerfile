@@ -7,4 +7,4 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt update -y
 RUN apt install software-properties-common vim python3.8 zip unzip -y
 COPY ./zip_job.py .
-CMD [echo "$OSTYPE",arch] 
+CMD ["dpkg","--print-architecture","echo","$OSTYPE"]

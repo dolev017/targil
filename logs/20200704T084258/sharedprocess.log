@@ -1,0 +1,3 @@
+[2020-07-04 08:43:03.496] [sharedprocess] [info] main {"machineId":"b7b0defef30dc3b3c33abd0576d59640ae0bb167c3ee3def6791c00038b24708","windowId":2}
+[2020-07-04 08:43:03.616] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/dolev/targil/User/snippets'
+[2020-07-04 08:43:43.523] [sharedprocess] [info] Starting to clean up unused language packs.
