@@ -16,3 +16,5 @@ try:
            zipObj.write("{0}.txt".format(letter))
 except:
     print ("something fails with zip files")
+
+print ("success")

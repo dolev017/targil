@@ -34,3 +34,15 @@
 [2020-07-04 08:44:07.776] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
 [2020-07-04 08:44:07.779] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/github/dist/extension.js
 [2020-07-04 08:44:07.979] [exthost] [info] eager extensions activated
+[2020-07-04 10:25:05.604] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"extensionId":{"value":"vscode.python","_lower":"vscode.python"},"activationEvent":"onLanguage:python"}
+[2020-07-04 10:25:05.610] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/python/dist/pythonMain
+[2020-07-04 10:25:06.524] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:json"}
+[2020-07-04 10:25:06.525] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2020-07-04 10:25:06.575] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:json"}
+[2020-07-04 10:25:06.577] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2020-07-04 10:25:06.660] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:json"}
+[2020-07-04 10:25:06.660] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2020-07-04 10:25:06.786] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onLanguage:json"}
+[2020-07-04 10:25:06.788] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2020-07-04 10:25:07.806] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"onLanguage:json"}
+[2020-07-04 10:25:07.806] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/35/usr/share/code/resources/app/extensions/npm/dist/main
