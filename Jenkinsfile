@@ -13,6 +13,16 @@ pipeline {
             }
         }
         stage('Publish') {
+            steps{
+
+             script{
+                def server = Artifactory.server 'http://172.17.0.1:8081/artifactory/'
+                def rtGradle = Artifactory.newGradleBuild()
+                rtGradle.resolver server: server, repo: 'binary-storage'
+                rtGradle.deployer server: server, repo: 'binary-storage'
+                rtGradle.useWrapper = true
+            }
+            }
             //steps { 
                   
              //  sh 'curl -fL https://getcli.jfrog.io | sh'
