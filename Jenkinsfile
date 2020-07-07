@@ -16,7 +16,7 @@ pipeline {
             steps{
 
              script{
-                def server = Artifactory.server 'http://172.17.0.1:8081/artifactory/'
+                def server = Artifactory.server 'http://localhost:8081/artifactory/'
                 def rtGradle = Artifactory.newGradleBuild()
                 rtGradle.resolver server: server, repo: 'binary-storage'
                 rtGradle.deployer server: server, repo: 'binary-storage'
