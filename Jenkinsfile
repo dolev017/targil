@@ -1,12 +1,11 @@
 pipeline {
-    agent {
-        label 'zip_job_docker'
-    // Equivalent to "docker build -f Dockerfile.build --build-arg version=1.0.2 ./build/
+    agent {      
     dockerfile {
         filename 'Dockerfile'
         // dir '/home/dolev/targil'
         // label 'zip_job_docker'
         }
+       // label 'zip_job_docker'
     }    
     stages {
         stage('Build') {
